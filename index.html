@@ -1,4 +1,14 @@
-<!-- Écran d'accueil -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Serpent</title>
+    <!-- C'est ICI qu'on lie le fichier CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Écran d'accueil -->
     <div id="startScreen">
         <button id="playButton" onclick="startGame()">PLAY</button>
     </div>
@@ -8,3 +18,8 @@
         <div class="score">Score : <span id="scoreVal">0</span></div>
         <canvas id="snakeGame" width="400" height="400"></canvas>
     </div>
+
+    <!-- C'est ICI qu'on lie le fichier JavaScript, de préférence juste avant la fermeture de </body> -->
+    <script src="index.js"></script>
+</body>
+</html>
