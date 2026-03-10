@@ -1,0 +1,36 @@
+body { 
+            display: flex; justify-content: center; align-items: center; 
+            height: 100vh; margin: 0; background: #0a0a0a; 
+            color: white; font-family: 'Arial Black', sans-serif; flex-direction: column; 
+        }
+
+        /* Le bouton PLAY style néon bleu comme ton image */
+        #playButton {
+            padding: 20px 60px;
+            font-size: 40px;
+            color: #008cff;
+            background: #001529;
+            border: 4px solid #008cff;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            box-shadow: 0 0 20px #008cff, inset 0 0 15px #008cff;
+            text-shadow: 0 0 10px #008cff;
+            transition: 0.3s;
+        }
+
+        #playButton:hover {
+            background: #008cff;
+            color: white;
+            box-shadow: 0 0 50px #008cff;
+        }
+
+        /* Cacher le jeu au début */
+        #gameContainer { display: none; text-align: center; }
+        
+        canvas { 
+            border: 5px solid #008cff; border-radius: 10px;
+            background-color: #000; box-shadow: 0 0 20px rgba(0,140,255,0.4);
+        }
+        .score { font-size: 24px; margin-bottom: 10px; color: #008cff; }
